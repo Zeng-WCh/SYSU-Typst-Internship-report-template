@@ -88,9 +88,13 @@
   ]
 
   align(center)[
+    \
+    \
     #if banner != none {
       image(banner, width: 64%)
     }
+    \
+    \
     \
     #set text(font: xbsong, lang: "zh", size: 25pt)
     #title
@@ -120,7 +124,7 @@
 
     #set text(font: xbsong, lang: "zh", size: 12pt)
 
-    #v(145pt)
+    #v(140pt)
 
     #text(year)年 #h(2em) #(month)月 #h(2em) #(day)日 
   ]
@@ -185,7 +189,7 @@
     #v(100pt)
     #align(right)[
       成绩评定： #h(70pt)
-
+      
       \
 
       指导老师（签名）： #h(5em)
