@@ -177,7 +177,7 @@
   auto f = []() -> int {
     cout << "Hello World\n";
     return 0;
-  }
+  };
 
   int main() {
     return f();
