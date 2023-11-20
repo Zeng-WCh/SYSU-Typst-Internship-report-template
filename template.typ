@@ -1,7 +1,5 @@
 // Font Settings, change it if you need
 #let song = "FZShuSong-Z01"
-#let hei = "FZHei-B01"
-#let kai = "FZKai-Z03"
 #let xbsong = "FZXiaoBiaoSong-B05"
 #let code = "Monaspace Neon Var"
 
