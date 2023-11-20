@@ -16,7 +16,7 @@
   day: "25",
 )
 
-#personal_report[
+#content[
   // Add your content here
   1. 实习目的与任务
 
@@ -27,4 +27,3 @@
   #lorem(2500)
 ]
 
-#judging_report[]

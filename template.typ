@@ -130,102 +130,100 @@
   ]
 
   body
-}
 
-#let personal_report(body) = {
   pagebreak(weak: true)
   table(
-  columns: (2fr, 19fr),
-  [
-    #set align(center + horizon)
-    #set text(font: xbsong, lang: "zh", size: 16pt)
-    实习\
-    报告
-  ],
-  [
-    #set text(font: song, lang: "zh", size: 11pt)
-    #body
-  ]
-)
-}
-
-#let judging_report(body) = {
-  pagebreak(weak: true)
-  table(
-  columns: (2fr, 19fr),
-  [
-    #set align(center + horizon)
-    #set text(font: xbsong, lang: "zh", size: 16pt)
-    实习\
-    单位\
-    意见
-  ],
-  [
-    #set text(font: song, lang: "zh", size: 14pt)
-    
-    #v(250pt)
-    #align(right)[
-      （盖章） #h(5em)
-
-      #h(2em)
-      年
-      #h(2em)
-      月
-      #h(2em)
-      日
-    ]
-    #v(15pt)
-  ],
-  [
-    #set align(center + horizon)
-    #set text(font: xbsong, lang: "zh", size: 16pt)
-    指导\
-    老师\
-    评语
-  ],
-  [
-    #set text(font: song, lang: "zh", size: 14pt)
-    
-    #v(100pt)
-    #align(right)[
-      成绩评定： #h(70pt)
+    columns: (2fr, 19fr),
+    [
+      #set align(center + horizon)
+      #set text(font: xbsong, lang: "zh", size: 16pt)
+      实习\
+      单位\
+      意见
+    ],
+    [
+      #set text(font: song, lang: "zh", size: 14pt)
       
-      \
+      #v(250pt)
+      #align(right)[
+        （盖章） #h(5em)
 
-      指导老师（签名）： #h(5em)
-      \
+        #h(2em)
+        年
+        #h(2em)
+        月
+        #h(2em)
+        日
+      ]
+      #v(15pt)
+    ],
+    [
+      #set align(center + horizon)
+      #set text(font: xbsong, lang: "zh", size: 16pt)
+      指导\
+      老师\
+      评语
+    ],
+    [
+      #set text(font: song, lang: "zh", size: 14pt)
+      
+      #v(100pt)
+      #align(right)[
+        成绩评定： #h(70pt)
+        
+        \
 
-      #h(2em)
-      年
-      #h(2em)
-      月
-      #h(2em)
-      日
+        指导老师（签名）： #h(5em)
+        \
+
+        #h(2em)
+        年
+        #h(2em)
+        月
+        #h(2em)
+        日
+      ]
+      #v(15pt)
+    ],
+    [
+      #set align(center + horizon)
+      #set text(font: xbsong, lang: "zh", size: 16pt)
+      院系\
+      意见
+    ],
+    [
+      #set text(font: song, lang: "zh", size: 14pt)
+      
+      #v(100pt)
+      #align(right)[
+        主管教学领导签名（盖章）： #h(5em)
+        \
+
+        #h(2em)
+        年
+        #h(2em)
+        月
+        #h(2em)
+        日
+      ]
+      #v(15pt)
+    ],
+  )
+}
+
+#let content(body) = {
+  pagebreak(weak: true)
+  table(
+    columns: (2fr, 19fr),
+    [
+      #set align(center + horizon)
+      #set text(font: xbsong, lang: "zh", size: 16pt)
+      实习\
+      报告
+    ],
+    [
+      #set text(font: song, lang: "zh", size: 11pt)
+      #body
     ]
-    #v(15pt)
-  ],
-  [
-    #set align(center + horizon)
-    #set text(font: xbsong, lang: "zh", size: 16pt)
-    院系\
-    意见
-  ],
-  [
-    #set text(font: song, lang: "zh", size: 14pt)
-    
-    #v(100pt)
-    #align(right)[
-      主管教学领导签名（盖章）： #h(5em)
-      \
-
-      #h(2em)
-      年
-      #h(2em)
-      月
-      #h(2em)
-      日
-    ]
-    #v(15pt)
-  ],
-)
+  )
 }
