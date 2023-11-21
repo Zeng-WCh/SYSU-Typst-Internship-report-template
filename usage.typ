@@ -16,8 +16,7 @@
   day: "25",
 )
 
-#content[
-  // Add your content here
+// Add your content here
   1. `C++` 中 Hello World 的 114514 种写法
 
   1.1 C With Class 风格
@@ -187,5 +186,4 @@
   ...
 
   #lorem(2500)
-]
 

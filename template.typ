@@ -127,7 +127,24 @@
     #text(year)年 #h(2em) #(month)月 #h(2em) #(day)日 
   ]
 
-  body
+  let content(body) = {
+    pagebreak(weak: true)
+    table(
+      columns: (2fr, 19fr),
+      [
+        #set align(center + horizon)
+        #set text(font: xbsong, lang: "zh", size: 16pt)
+        实习\
+        报告
+      ],
+      [
+        #set text(font: song, lang: "zh", size: 11pt)
+        #body
+      ]
+    )
+  }
+
+  content(body)
 
   pagebreak(weak: true)
   table(
@@ -206,22 +223,5 @@
       ]
       #v(15pt)
     ],
-  )
-}
-
-#let content(body) = {
-  pagebreak(weak: true)
-  table(
-    columns: (2fr, 19fr),
-    [
-      #set align(center + horizon)
-      #set text(font: xbsong, lang: "zh", size: 16pt)
-      实习\
-      报告
-    ],
-    [
-      #set text(font: song, lang: "zh", size: 11pt)
-      #body
-    ]
   )
 }
