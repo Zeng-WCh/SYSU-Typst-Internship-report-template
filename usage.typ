@@ -17,173 +17,173 @@
 )
 
 // Add your content here
-  1. `C++` 中 Hello World 的 114514 种写法
+1. `C++` 中 Hello World 的 114514 种写法
 
-  1.1 C With Class 风格
+1.1 C With Class 风格
 
-  ```cpp
-  #include <stdio.h>
+```cpp
+#include <stdio.h>
 
-  int main() {
-    printf("Hello World!\n");
-    return 0;
+int main() {
+  printf("Hello World!\n");
+  return 0;
+}
+```
+
+1.2 C++ 风格
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  cout << "Hello World!\n";
+  return 0;
+}
+```
+
+1.3 面向对象风格
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+class HelloWorld {
+private:
+  const char *str = "Hello World!";
+
+public:
+  HelloWorld() {
+    cout << str << endl;
   }
-  ```
+};
 
-  1.2 C++ 风格
-
-  ```cpp
-  #include <iostream>
-
-  using namespace std;
-
-  int main() {
-    cout << "Hello World!\n";
-    return 0;
-  }
-  ```
-
-  1.3 面向对象风格
-
-  ```cpp
-  #include <iostream>
-
-  using namespace std;
-
-  class HelloWorld {
-  private:
-    const char *str = "Hello World!";
-
-  public:
-    HelloWorld() {
-      cout << str << endl;
-    }
-  };
-
-  int main() {
-    HelloWorld hw;
-    return 0;
-  }
-  ```
-
-  1.5 操作符重载风格
-
-  ```cpp
-  #include <iostream>
-  #include <ostream>
-
-  using namespace std;
-
-  class HelloWorld {
-  private:
-    const char *str = "Hello World!";
-
-  public:
-    friend ostream &operator<<(ostream &os, const HelloWorld &hw);
-  };
-
-  ostream &operator<<(ostream &os, const HelloWorld &hw) {
-    os << hw.str;
-    return os;
-  }
-
-  int main() {
-    cout << HelloWorld() << endl;
-  }
-  ```
-
-  1.6 操作符重载 (2)
-
-  ```cpp
-  #include <iostream>
-
-  using namespace std;
-
-  class HelloWorld {
-  private:
-    const char *str = "Hello World!";
-
-  public:
-    operator int() {
-      cout << str << '\n';
-      return 0;
-    }
-  };
-
-  int main() {
-    return HelloWorld();
-  }
-  ```
-
-  1.7 抽风风格
-
-  ```cpp
-  #include <iostream>
-
-  using namespace std;
-
-  class HelloWorld {
-  private:
-    const char *str = "Hello World!";
-
-  public:
-    ~HelloWorld() {
-      cout << str << endl;
-    }
-  };
-
+int main() {
   HelloWorld hw;
+  return 0;
+}
+```
 
-  int main() {
+1.5 操作符重载风格
+
+```cpp
+#include <iostream>
+#include <ostream>
+
+using namespace std;
+
+class HelloWorld {
+private:
+  const char *str = "Hello World!";
+
+public:
+  friend ostream &operator<<(ostream &os, const HelloWorld &hw);
+};
+
+ostream &operator<<(ostream &os, const HelloWorld &hw) {
+  os << hw.str;
+  return os;
+}
+
+int main() {
+  cout << HelloWorld() << endl;
+}
+```
+
+1.6 操作符重载 (2)
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+class HelloWorld {
+private:
+  const char *str = "Hello World!";
+
+public:
+  operator int() {
+    cout << str << '\n';
     return 0;
   }
-  ```
+};
 
-  1.8 仿 lambda 风格
+int main() {
+  return HelloWorld();
+}
+```
 
-  ```cpp
-  #include <iostream>
+1.7 抽风风格
 
-  using namespace std;
+```cpp
+#include <iostream>
 
-  class HelloWorld {
-  private:
-    const char *str = "Hello World!";
+using namespace std;
 
-  public:
-    int operator()() {
-      cout << str << endl;
-      return 0;
-    }
-  };
+class HelloWorld {
+private:
+  const char *str = "Hello World!";
 
-  HelloWorld hw;
-
-  int a = hw();
-
-  int main() {
-    return a;
+public:
+  ~HelloWorld() {
+    cout << str << endl;
   }
-  ```
+};
 
-  1.9 lambda 风格
+HelloWorld hw;
 
-  ```cpp
-  #include <iostream>
+int main() {
+  return 0;
+}
+```
 
-  using namespace std;
+1.8 仿 lambda 风格
 
-  auto f = []() -> int {
-    cout << "Hello World\n";
+```cpp
+#include <iostream>
+
+using namespace std;
+
+class HelloWorld {
+private:
+  const char *str = "Hello World!";
+
+public:
+  int operator()() {
+    cout << str << endl;
     return 0;
-  };
-
-  int main() {
-    return f();
   }
-  ```
+};
 
-  ...
+HelloWorld hw;
 
-  #lorem(2500)
+int a = hw();
+
+int main() {
+  return a;
+}
+```
+
+1.9 lambda 风格
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+auto f = []() -> int {
+  cout << "Hello World\n";
+  return 0;
+};
+
+int main() {
+  return f();
+}
+```
+
+...
+
+#lorem(2500)
 
